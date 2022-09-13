@@ -1,5 +1,5 @@
 # My love games
-https://thomasmod.github.io/thomasmod/
+<a href="https://thomasmod.github.io/thomasmod">thomas-2048.io</a>
 
 <h2><img src="https://te.legra.ph/file/ce5a5d154736726e05c40.png" width="10%"> README • It's Me</h2>
 <img src="https://i.imgur.com/b4YRYhP.jpeg">

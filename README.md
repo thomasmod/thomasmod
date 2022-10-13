@@ -9,7 +9,7 @@
 ✯ <a href='https://github.com/thomasmod'><img src='https://img.shields.io/badge/By graphic:- Procreate, IbisPaint, Painter-red?style=flat-square' alt='Level'></a><br>
 ✯ <a href='https://github.com/thomasmod'><img src='https://img.shields.io/badge/My hobbies:- Listening to music, Art works, Games-red?style=flat-square' alt='Level'></a>
 
-<h2><img src="https://te.legra.ph/file/2b66eef4952cedc2e1ffb.png" width="5ffffff%">In Social Networks</h2>
+<h2><img src="https://te.legra.ph/file/2b66eef4952cedc2e1ffb.png" width="5%">In Social Networks</h2>
 I only have personal accounts in the following <b>networks</b>.<br>
 
 <img src="https://te.legra.ph/file/ad02280782f0cafbe372a.png" width="20px"> <a href='https://instagram.com/_temur.erkinov'><img src='https://img.shields.io/badge/Instagram-_temur.erkinov-orange?style=flat-square' alt='Level'></a><br>

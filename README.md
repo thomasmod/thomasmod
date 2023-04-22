@@ -1,9 +1,6 @@
 # My love games
 <a href="https://thomasmod.github.io/thomasmod">thomas-2048.io</a>
 
-<h2><img src="https://te.legra.ph/file/ce5a5d154736726e05c40.png" width="5%"> README • It's Me</h2>
-<img src="https://i.imgur.com/b4YRYhP.jpeg">
-
 <h2><img src="https://te.legra.ph/file/a7a7cfe66398989ea7899.png" width="5%"> Short Information v20.5.0</h2>
 ✯ <a href='https://github.com/thomasmod'><img src='https://img.shields.io/badge/By programming:- Python, PHP, HTML, CSS-red?style=flat-square' alt='Level'></a><br>
 ✯ <a href='https://github.com/thomasmod'><img src='https://img.shields.io/badge/By graphic:- Procreate, IbisPaint, Painter-red?style=flat-square' alt='Level'></a><br>

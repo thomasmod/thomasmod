@@ -1,85 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>2048</title>
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="style/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignHub</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            color: #4285F4;
+        }
+
+        p {
+            color: #333333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4285F4;
+        }
+
+        .button {
+            background-color: #4285F4;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #1A73E8;
+        }
+
+        /* Анимированные фигуры */
+        .animated-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            animation: moveShape 15s infinite linear alternate;
+        }
+
+        .shape1 { background-color: #4285F4; width: 80px; height: 80px; top: 10%; left: 20%; }
+        .shape2 { background-color: #34A853; width: 60px; height: 60px; top: 50%; left: 70%; }
+        .shape3 { background-color: #FBBC05; width: 100px; height: 100px; top: 80%; left: 40%; }
+        .shape4 { background-color: #EA4335; width: 120px; height: 120px; top: 30%; left: 90%; }
+
+        @keyframes moveShape {
+            from { transform: translate(0, 0); }
+            to { transform: translate(50px, 50px); }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="heading">
-      <h1 class="title">2048 Thomas</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
+    <div class="animated-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
     </div>
+
+    <h1>Добро пожаловать на DesignHub!</h1>
+    <p>Инновационное сообщество дизайнеров и технологов</p>
     
-    <div class="above-game">
-      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-      <a class="restart-button">New game</a>
-    </div>
+    <!-- Ссылка на Telegram -->
+    <a href="https://t.me/your_telegram_username" target="_blank" class="button">Telegram</a>
     
-    <div class="game-container">
-      <div class="game-message">
-        <p></p>
-        <div class="lower">
-          <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">Try again</a>
-        </div>
-      </div>
-      
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-      </div>
-      
-      <div class="tile-container">
-        
-      </div>
-    </div>
-    
-    <p class="game-explanation">
-      <strong class="important">So Easy</strong>:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
-    </p>
-    <hr>
-    <p>
-      Created by <a href="https://t.me/netuzb" target="_blank">Thomas Wilson</a> Based on 1024 by Veewo Studio and conceptually similar to Threes by Asher Vollmer.
-    </p>
-  </div>
-  
-  <script src="js/bind_polyfill.js"></script>
-  <script src="js/classlist_polyfill.js"></script>
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_storage_manager.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/application.js"></script>
+    <!-- Ссылка на Instagram -->
+    <a href="https://www.instagram.com/your_instagram_username/" target="_blank" class="button">Instagram</a>
 </body>
 </html>

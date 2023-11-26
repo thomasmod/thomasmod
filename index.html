@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesignHub</title>
+    <title>Thomas Wilson's Page</title>
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -27,9 +29,15 @@
             color: #333333;
         }
 
-        a {
-            text-decoration: none;
-            color: #4285F4;
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-group {
+            display: flex;
+            margin-top: 20px;
         }
 
         .button {
@@ -40,7 +48,10 @@
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
-            margin-top: 20px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
         }
 
         .button:hover {
@@ -70,9 +81,31 @@
 
         @keyframes moveShape {
             from { transform: translate(0, 0); }
-            to { transform: translate(50px, 50px); }
+            to { transform: translate(240px, 240px); }
         }
     </style>
+    <script>
+        function copyEmail() {
+            var emailText = "oooerkinov@gmail.com";
+            navigator.clipboard.writeText(emailText);
+            alert("E-mail copied: " + emailText);
+        }
+        function copyEmail2() {
+            var emailText = "thomasmod@yandex.com";
+            navigator.clipboard.writeText(emailText);
+            alert("E-mail copied: " + emailText);
+        }
+        function copyFortnite() {
+            var emailText = "Thommi_Wilson";
+            navigator.clipboard.writeText(emailText);
+            alert("My nick copied: " + emailText);
+        }
+        function copyDiscord() {
+            var emailText = "779048478512644107";
+            navigator.clipboard.writeText(emailText);
+            alert("My ID Discord copied: " + emailText);
+        }
+    </script>
 </head>
 <body>
     <div class="animated-shapes">
@@ -82,13 +115,45 @@
         <div class="shape shape4"></div>
     </div>
 
-    <h1>Добро пожаловать на DesignHub!</h1>
-    <p>Инновационное сообщество дизайнеров и технологов</p>
+    <h1>Thomas Wilson's Page</h1>
     
-    <!-- Ссылка на Telegram -->
-    <a href="https://t.me/your_telegram_username" target="_blank" class="button">Telegram</a>
+    <div class="button-container">
+        <div class="button-group">
+            <a href="https://t.me/netuzb" target="_blank" class="button">
+                <i class="fab fa-telegram icon"></i>Telegram
+            </a>
+            <a href="https://www.instagram.com/_thomas.positive/" target="_blank" class="button">
+                <i class="fab fa-instagram icon"></i>Instagram
+            </a>
+            <a href="javascript:void(0);" onclick="copyDiscord()" class="button" style="text-decoration: none;>
+                <i class="fab fa-discord icon"></i>Discord
+            </a>
+        </div>
+
+        <div class="button-group">
+            <a href="https://steamcommunity.com/id/thommi_wilson/" target="_blank" class="button">
+                <i class="fab fa-steam icon"></i>Steam
+            </a>
+            <a href="javascript:void(0);" onclick="copyFortnite()" class="button" style="text-decoration: none;">
+                <i class="fab fa-fort-awesome icon"></i>Fortnite
+            </a>
+        </div>
+
+        <div class="button-group">
+            <a href="https://open.spotify.com/user/erayquicskk90k9fyg1yp3rng?si=6cde0ea455fe47e0" target="_blank" class="button">
+                <i class="fab fa-spotify icon"></i>Spotify
+            </a>
+        </div>
+
+        <div class="button-group">
+            <a href="javascript:void(0);" onclick="copyEmail2()" class="button" style="text-decoration: none;">
+                <i class="fas fa-envelope icon"></i>Yandex e-mail
+            </a>
     
-    <!-- Ссылка на Instagram -->
-    <a href="https://www.instagram.com/your_instagram_username/" target="_blank" class="button">Instagram</a>
+            <a href="javascript:void(0);" onclick="copyEmail()" class="button" style="text-decoration: none;">
+                <i class="fas fa-envelope icon"></i>Google g-mail
+            </a>
+        </div>
+    </div>
 </body>
 </html>

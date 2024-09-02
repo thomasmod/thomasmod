@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Wilson's Page</title>
+    <title>Nazima Saidova's Page</title>
     <!-- Подключение Font Awesome для иконок -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #ffffff;
+            font-family: 'Georgia', serif; /* Classic serif font for a painterly feel */
+            background-color: #3d85c6; /* Updated background color */
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,15 +18,35 @@
             justify-content: center;
             height: 100vh;
             overflow: hidden;
+            color: #ffffff;
             position: relative;
         }
 
+        .container {
+            background-color: #6fa8dc; /* Updated background color */
+            border-style: solid;
+            border-color: #9fc5e8; /* Border color */
+            border-width: 2px; /* Added border width */
+            text-align: center; /* Text alignment */
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            width: 80%;
+            max-width: 800px;
+            position: relative; /* For positioning the animated shapes */
+        }
+
         h1 {
-            color: #4285F4;
+            color: #cfe2f3; /* Updated color for heading */
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
         }
 
         p {
-            color: #333333;
+            color: #f0e6d6; /* Light beige color for text */
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         .button-container {
@@ -38,27 +58,34 @@
         .button-group {
             display: flex;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
 
         .button {
-            background-color: #4285F4;
-            color: #ffffff;
+            background-color: #cfe2f3; /* Updated button background color */
+            color: #000000;
             border: none;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            border-radius: 5px;
-            margin-right: 10px;
+            border-radius: 8px;
+            margin: 5px;
             display: flex;
             align-items: center;
             text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .button:hover {
-            background-color: #1A73E8;
+            background-color: #b6d0f3; /* Slightly darker on hover for contrast */
+            transform: scale(1.05);
         }
 
-        /* Анимированные фигуры */
+        .button .icon {
+            margin-right: 8px;
+        }
+
+        /* Van Gogh-like swirling shapes */
         .animated-shapes {
             position: absolute;
             top: 0;
@@ -66,44 +93,37 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
+            overflow: hidden;
         }
 
         .shape {
             position: absolute;
             border-radius: 50%;
-            animation: moveShape 15s infinite linear alternate;
+            background: rgba(255, 255, 255, 0.3);
+            animation: swirlShape 20s infinite linear;
         }
 
-        .shape1 { background-color: #4285F4; width: 80px; height: 80px; top: 10%; left: 20%; }
-        .shape2 { background-color: #34A853; width: 60px; height: 60px; top: 50%; left: 70%; }
-        .shape3 { background-color: #FBBC05; width: 100px; height: 100px; top: 80%; left: 40%; }
-        .shape4 { background-color: #EA4335; width: 120px; height: 120px; top: 30%; left: 90%; }
+        .shape1 { width: 80px; height: 80px; top: 10%; left: 20%; }
+        .shape2 { width: 60px; height: 60px; top: 50%; left: 70%; }
+        .shape3 { width: 100px; height: 100px; top: 80%; left: 40%; }
+        .shape4 { width: 120px; height: 120px; top: 30%; left: 90%; }
 
-        @keyframes moveShape {
-            from { transform: translate(0, 0); }
-            to { transform: translate(240px, 240px); }
+        @keyframes swirlShape {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(100px, 100px) rotate(360deg); }
         }
     </style>
     <script>
         function copyEmail() {
-            var emailText = "oooerkinov@gmail.com";
+            var emailText = "foreverbeatific@yandex.com";
             navigator.clipboard.writeText(emailText);
-            alert("E-mail copied: " + emailText);
+            alert("Yandex.Mail copied: " + emailText);
         }
+
         function copyEmail2() {
-            var emailText = "thomasmod@yandex.com";
+            var emailText = "anotheremail@example.com"; // Adjust this as needed
             navigator.clipboard.writeText(emailText);
-            alert("E-mail copied: " + emailText);
-        }
-        function copyFortnite() {
-            var emailText = "Thommi_Wilson";
-            navigator.clipboard.writeText(emailText);
-            alert("My nick copied: " + emailText);
-        }
-        function copyDiscord() {
-            var emailText = "779048478512644107";
-            navigator.clipboard.writeText(emailText);
-            alert("My ID Discord copied: " + emailText);
+            alert("Google g-mail copied: " + emailText);
         }
     </script>
 </head>
@@ -115,44 +135,34 @@
         <div class="shape shape4"></div>
     </div>
 
-    <h1>Thomas Wilson's Page</h1>
-    
-    <div class="button-container">
-        <div class="button-group">
-            <a href="https://t.me/netuzb" target="_blank" class="button">
-                <i class="fab fa-telegram icon"></i>Telegram
-            </a>
-            <a href="https://www.instagram.com/_thomas.positive/" target="_blank" class="button">
-                <i class="fab fa-instagram icon"></i>Instagram
-            </a>
-            <a href="javascript:void(0);" onclick="copyDiscord()" class="button" style="text-decoration: none;>
-                <i class="fab fa-discord icon"></i>Discord
-            </a>
-        </div>
+    <div class="container">
+        <h1>Nazima Saidova's Page</h1>
+        
+        <div class="button-container">
+            <div class="button-group">
+                <a href="https://t.me/saidova_nazima" target="_blank" class="button">
+                    <i class="fab fa-telegram icon"></i>Telegram
+                </a>
+                <a href="https://www.instagram.com/saidova_nazima_" target="_blank" class="button">
+                    <i class="fab fa-instagram icon"></i>Instagram
+                </a>
+                <!-- Updated Yandex-Mail button -->
+                <a href="javascript:void(0);" onclick="copyEmail()" class="button">
+                    <i class="fas fa-envelope icon"></i>Yandex-Mail
+                </a>
+            </div>
 
-        <div class="button-group">
-            <a href="https://steamcommunity.com/id/thommi_wilson/" target="_blank" class="button">
-                <i class="fab fa-steam icon"></i>Steam
-            </a>
-            <a href="javascript:void(0);" onclick="copyFortnite()" class="button" style="text-decoration: none;">
-                <i class="fab fa-fort-awesome icon"></i>Fortnite
-            </a>
-        </div>
-
-        <div class="button-group">
-            <a href="https://open.spotify.com/user/erayquicskk90k9fyg1yp3rng?si=6cde0ea455fe47e0" target="_blank" class="button">
-                <i class="fab fa-spotify icon"></i>Spotify
-            </a>
-        </div>
-
-        <div class="button-group">
-            <a href="javascript:void(0);" onclick="copyEmail2()" class="button" style="text-decoration: none;">
-                <i class="fas fa-envelope icon"></i>Yandex e-mail
-            </a>
-    
-            <a href="javascript:void(0);" onclick="copyEmail()" class="button" style="text-decoration: none;">
-                <i class="fas fa-envelope icon"></i>Google g-mail
-            </a>
+            <div class="button-group">
+                <a href="https://www.facebook.com/profile.php?id=100072316555817&mibextid=ZbWKwL" target="_blank" class="button">
+                    <i class="fab fa-facebook icon"></i>Facebook
+                </a>
+                <a href="https://open.spotify.com/user/3132asoprmdheafjuszuqnrc3k5q?si=l-ORluqbRWWrFIoVC65OKw" target="_blank" class="button">
+                    <i class="fab fa-spotify icon"></i>Spotify
+                </a>
+                <a href="javascript:void(0);" onclick="copyEmail2()" class="button">
+                    <i class="fas fa-envelope icon"></i>Google g-mail
+                </a>
+            </div>
         </div>
     </div>
 </body>
